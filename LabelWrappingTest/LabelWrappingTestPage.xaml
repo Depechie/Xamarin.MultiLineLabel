@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		xmlns:local="clr-namespace:LabelWrappingTest"
+		xmlns:controls="clr-namespace:LabelWrappingTest.Controls"
+		x:Class="LabelWrappingTest.LabelWrappingTestPage">
+
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness">
+			<OnPlatform.iOS>0, 25, 0, 0</OnPlatform.iOS>
+			<OnPlatform.Android>0, 0, 0, 0</OnPlatform.Android>
+		</OnPlatform>
+	</ContentPage.Padding>
+	
+	<StackLayout>
+		<Label Text="NORMAL" FontSize="12" FontAttributes="Bold" />
+		<Label Text="Welcome to Xamarin Forms! Let us try to create a label with text that is too long to fit on 1 line so it should wrap and implement an ellipsis if it's more than 2 lines in total"
+			   VerticalOptions="Center" HorizontalOptions="Center"
+			   LineBreakMode="TailTruncation"
+			   Margin="20,0,20,0"/>
+
+		<Label Text="MULTILINE" FontSize="12" FontAttributes="Bold" />
+		<controls:MultiLineLabel Text="Welcome to Xamarin Forms! Let us try to create a label with text that is too long to fit on 1 line so it should wrap and implement an ellipsis if it's more than 2 lines in total"
+				VerticalOptions="Center" HorizontalOptions="Center"
+				LineBreakMode="TailTruncation"
+				Margin="20,0,20,0"/>
+
+		<Label Text="MULTILINE - 2 lines" FontSize="12" FontAttributes="Bold" />
+		<controls:MultiLineLabel Text="Welcome to Xamarin Forms! Let us try to create a label with text that is too long to fit on 1 line so it should wrap and implement an ellipsis if it's more than 2 lines in total"
+				VerticalOptions="Center" HorizontalOptions="Center"
+				LineBreakMode="TailTruncation"
+				Lines="2"
+				Margin="20,0,20,0"/>		
+
+		<Label Text="MULTILINE - 3 lines" FontSize="12" FontAttributes="Bold" />
+		<controls:MultiLineLabel Text="Welcome to Xamarin Forms! Let us try to create a label with text that is too long to fit on 1 line so it should wrap and implement an ellipsis if it's more than 2 lines in total"
+				VerticalOptions="Center" HorizontalOptions="Center"
+				LineBreakMode="TailTruncation"
+				Lines="3"
+				Margin="20,0,20,0"/>
+	</StackLayout>
+</ContentPage>

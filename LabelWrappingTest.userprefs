@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Droid/LabelWrappingTest.Droid.csproj">
+  <MonoDevelop.Ide.ItemProperties.LabelWrappingTest.Droid PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/CustomMultiLineLabelRenderer.cs">
+    <Files>
+      <File FileName="LabelWrappingTest/LabelWrappingTestPage.xaml" Line="35" Column="49" />
+      <File FileName="iOS/CustomMultiLineLabelRenderer.cs" Line="22" Column="2" />
+      <File FileName="Droid/CustomMultiLineLabelRenderer.cs" Line="20" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.LabelWrappingTest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2B6A4098-8BCA-46CB-B1C8-0972A13BB6FC" />
+</Properties>
